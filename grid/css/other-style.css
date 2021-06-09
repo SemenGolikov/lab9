@@ -1,0 +1,257 @@
+.tovar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tovar-small {
+    grid-row: 2/3;
+}
+
+.button {
+    background: #F3F3F3;
+}
+
+footer {
+    grid-row: 3/4;
+}
+
+.other_button a img {
+    height: 40px;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 60px;
+}
+
+.production {
+    width: 100%;
+    z-index: 20;
+    grid-row: 2/3;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    justify-self: center;
+}
+.production > * {
+    justify-self: center;
+}
+
+.dkp_logo {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.other_button {
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.other_button a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other_button img {
+    height: 60px;
+    z-index: 10;
+}
+
+.tovar-small {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+.tovar-small > p {
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+main {
+    width: 45%;
+    height: 450px;
+    background-color: #9A1212;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50px;
+    justify-content: space-between;
+    z-index: 10;
+    margin-bottom: 30px;
+}
+
+main img {
+    border-radius: 50px;
+    height: 100%;
+}
+
+main p {
+    /* max-width: 70%; */
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.green3 {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 1;
+}
+
+.arrow {
+    height: 40px;
+}
+
+.button-active {
+    background: #9A1212;
+    transform: scale(1.1);
+}
+
+.button-active a {
+    color: #fff;
+}
+
+.green4 {
+    position: absolute;
+    left: 0%;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.company {
+    font-size: 25px;
+    width: 85%;
+    align-self: center;
+    text-align: right;
+    grid-row: 2/3;
+    justify-self: center;
+}
+.text_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: end;
+}
+footer p {
+    justify-self: end;
+    color: #9A1212;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+@media screen and (max-width: 1350px) {
+    header {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .production img:nth-child(5) {
+        display: none;
+    }
+    .production {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        /* width: 90vw; */
+        width: 70%;
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .production img:nth-child(4) {
+        display: none;
+    }
+    .production {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:950px){
+    .dkp_logo {
+        display: none;
+    }
+    main p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    header {
+        align-self: center;
+    }
+    .company {
+        font-size: 17px;
+    }
+    .company img {
+        height: 150px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .production img:nth-child(3) {
+        display: none;
+    }
+    .production {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 500px) {
+    main {
+        width: 85%;
+    }
+    .tovar-small > p {
+        font-size: 22px;
+    }
+    .production img:nth-child(2) {
+        display: none;
+    }
+    .company img {
+        height: 110px;
+    }
+    .production {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 450px) {
+    main p {
+        font-size: 15px;
+    }
+}
